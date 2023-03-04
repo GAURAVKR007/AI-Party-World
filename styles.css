@@ -129,7 +129,7 @@ body {
 .about .about-left img{
     position: absolute;
     top: -25px;
-    left: 120px;
+    left: 140px;
     z-index: -1;
     height: 30%;
 }
@@ -194,4 +194,57 @@ body {
 .prod-img a{
     text-decoration: none;
     color: red;
+}
+
+/* PortFolio - Section */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* text-align: center; */
+    padding: 50px;
+}
+
+.portfolio-left{
+    position: relative;
+    /* margin-right: 20px; */
+    max-width: 50%;
+    padding-left: 12%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.portfolio-left img{
+    position: absolute;
+    top: -12px;
+    left: 165px;
+    z-index: -1;
+    height: 30%;
+}
+
+.portfolio-left h1{
+    /* display: inline-block; */
+    margin-bottom: 40px;
+    color: var(--primary-text-color);
+}
+
+.portfolio-left p {
+    display: inline-block;
+    max-width: auto;
+    color: gray;
+}
+
+.portfolio-right{
+    /* text-align: center; */
+    height: auto;
+    flex-wrap: wrap;
+    max-width: 80%;
+    display: flex;
+}
+
+.portfolio-right img{
+    height: 200px;
+    width: 50%;
 }
