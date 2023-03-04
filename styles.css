@@ -11,6 +11,7 @@
     --primary-text-color: #20262E;
     --blue-color: #AEE2FF;
     --nav-red-color: #F48484;
+    --primary-gray-color: #EEEEEE;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
 .header {
     display: flex;
     justify-content: center;
+    background-color: var(--primary-gray-color);
     align-items: center;
     background: url("./images/props.png");
 }
@@ -83,6 +85,7 @@ body {
     background-image: url("./images/Layer_20.png");
     background-repeat: no-repeat;
     padding: 20px;
+    background-color: var(--primary-gray-color);
 }
 
 .home-left {
@@ -103,4 +106,58 @@ body {
 .home-right img{
     height: 500px;
     width: auto;
+}
+
+/* About - Section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+    padding: 50px;
+}
+
+.about-left{
+    position: relative;
+    /* margin-right: 20px; */
+    max-width: 65%;
+    padding-left: 12%;
+    margin-bottom: 20px;
+}
+
+.about .about-left img{
+    position: absolute;
+    top: -25px;
+    left: 120px;
+    z-index: -1;
+    height: 30%;
+}
+
+.about .about-left h1{
+    /* display: inline-block; */
+    margin-bottom: 40px;
+    color: var(--primary-text-color);
+}
+
+.about .about-left p {
+    display: inline-block;
+    max-width: auto;
+    color: gray;
+}
+
+.about .about-left a{
+    color: red;
+}
+
+
+.about .about-right{
+    /* text-align: center; */
+    height: auto;
+    max-width: 40%;
+}
+
+.about .about-right img{
+    height: 400px;
+    width: 100%;
 }
