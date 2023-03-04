@@ -57,9 +57,9 @@ body {
     padding: 17px;
 }
 
-.navbar .nav-items {
+/* .navbar .nav-items {
     
-}
+} */
 
 .navbar .nav-items li{
     display: inline-block;
@@ -160,4 +160,38 @@ body {
 .about .about-right img{
     height: 400px;
     width: 100%;
+}
+
+/* Products - Sections */
+.products {
+    padding: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* max-height: 200px; */
+    background-color: var(--primary-gray-color);
+}
+
+.prod-img {
+    text-align: center;
+    margin-right: 25px;
+}
+
+.prod-img img{
+    border-radius: 50%;
+  /* Optional: You can also set a border width and color */
+  border: 10px solid rgba(212, 95, 201, 0.833);
+  padding: 20px;
+  width: 125px;
+  height: 125px;
+}
+
+.prod-img h4{
+    margin: 20px 10px 20px 10px;
+}
+
+.prod-img a{
+    text-decoration: none;
+    color: red;
 }
