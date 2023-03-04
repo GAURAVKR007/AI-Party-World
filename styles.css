@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #20262E;
+    --blue-color: #AEE2FF;
+}
+
+body {
+    /* padding: 0 70px 0 70px; */
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--blue-color);
+    padding: 20px;
+}
+
+.top-header p{
+    display: inline;
+}
