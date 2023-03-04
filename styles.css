@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
@@ -32,6 +35,7 @@ body {
     display: inline;
     color: var(--primary-text-color);
     /* margin-left: 30px; */
+    font-size: 1.1rem;
 }
 
 /* Header - Section */
@@ -70,6 +74,10 @@ body {
     color: var(--primary-text-color);
     font-weight: bold;
     margin: 17px;
+}
+
+.navbar .nav-items li a:hover {
+    color: red;
 }
 
 .social p {
@@ -221,7 +229,7 @@ body {
     top: -12px;
     left: 165px;
     z-index: -1;
-    height: 30%;
+    height: 35%;
 }
 
 .portfolio-left h1{
@@ -248,3 +256,77 @@ body {
     height: 200px;
     width: 50%;
 }
+
+/* footer - Section */
+.footer {
+    background-color: var(--blue-color);
+    color: gray;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+
+/* Some Extra classes */
+
+.green {
+    color: rgb(77, 202, 77);
+}
+
+hr {
+    border-color: rgb(227, 177, 51);
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 572px) {
+    .about .about-right img{
+        height: 400px;
+        width: 200%;
+        margin-left: -100px;
+    }
+
+    .about .about-left img{
+        position: absolute;
+        top: -25px;
+        left: -110px;
+        z-index: -1;
+        height: 20%;
+    }
+
+    .portfolio-left img{
+        position: absolute;
+        top: -12px;
+        left: 0;
+        z-index: -1;
+        height: 20%;
+    }
+
+    .home {
+        padding-left: 100px;
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 500px){
+    .home-right img{
+        height: 400px;
+        /* margin-left: -40px; */
+        width: 100px;
+    }
+  } 
+
+  @media only screen and (max-width: 356px) {
+    .about .about-left img{
+        position: absolute;
+        top: -25px;
+        left: -40px;
+        z-index: -1;
+        height: 150px;
+        width: 140px;
+    }
+  }
