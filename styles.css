@@ -16,6 +16,7 @@
 body {
     /* padding: 0 70px 0 70px; */
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 /* top - header Section  */
@@ -29,6 +30,7 @@ body {
 .top-header p{
     display: inline;
     color: var(--primary-text-color);
+    /* margin-left: 30px; */
 }
 
 /* Header - Section */
@@ -70,4 +72,35 @@ body {
 
 .social p {
     display: inline;
+}
+
+/* Home - Section */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background-image: url("./images/Layer_20.png");
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.home-left {
+    max-width: 55%;
+}
+
+.home-left h1{
+   display: inline-block;
+   max-width: 73%;
+   margin-bottom: 10px;
+}
+
+.home p{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.home-right img{
+    height: 500px;
+    width: auto;
 }
