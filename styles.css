@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,19 +10,64 @@
 :root {
     --primary-text-color: #20262E;
     --blue-color: #AEE2FF;
+    --nav-red-color: #F48484;
 }
 
 body {
     /* padding: 0 70px 0 70px; */
+    font-family: 'Roboto', sans-serif;
 }
 
+/* top - header Section  */
 .top-header {
     display: flex;
     justify-content: space-around;
     background-color: var(--blue-color);
-    padding: 20px;
+    padding: 17px;
 }
 
 .top-header p{
+    display: inline;
+    color: var(--primary-text-color);
+}
+
+/* Header - Section */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./images/props.png");
+}
+
+.header img {
+    margin: 40px 0 40px 0;
+}
+
+/* Nav-Bar - Section */
+
+.navbar {
+    background-color: var(--nav-red-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 17px;
+}
+
+.navbar .nav-items {
+    
+}
+
+.navbar .nav-items li{
+    display: inline-block;
+}
+
+.navbar .nav-items li a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    margin: 17px;
+}
+
+.social p {
     display: inline;
 }
